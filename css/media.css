@@ -1,0 +1,137 @@
+/* navbar section responsive */
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+
+  #mobile-menu-btn {
+    display: block;
+  }
+
+  /* #mobile-menu-btn:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  #moon {
+    display: none;
+  }
+}
+
+/* home section responsive */
+@media (max-width: 1040px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-img-container {
+    justify-self: center;
+  }
+  .home-img img {
+    grid-column: 1fr;
+    order: 1;
+  }
+
+  .home-content {
+    grid-column: 1fr;
+    order: 2;
+  }
+
+  .fbtn {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .home-content p {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 790px) {
+  .home-content {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .home-content p {
+    width: 550px;
+  }
+}
+
+/* skills section responsive */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item .skill-bar {
+    width: 330px;
+  }
+}
+
+/* services section responsive */
+
+@media (min-width:800px) and (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* .service-card{
+    width:100%;
+  } */
+
+  .service-title {
+    text-align: center;
+  }
+}
+
+
+/* projects section responsive */
+
+@media (max-width: 790px) {
+  .projects-container .filter-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-container .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0px 5rem;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 1000px) {
+  .projects-container .filter-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects-container .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 80px;
+  }
+}
+
+/* @media (max-width:604) {
+    .projects-container .projects-grid .projects-card{
+        padding:0px 200px;
+        width: 90%;
+    }
+} */
+
+/* contact section responsive */
+@media (max-width: 650px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 420px) {
+    .form-container {
+      width: 90%;
+    }
+  }
