@@ -110,7 +110,7 @@ body {
 
 /* Dropdown Menu */
 .dropdown-menu {
-  display: none;
+  display:none;
   position: absolute;
   z-index: 10;
   left: 0;

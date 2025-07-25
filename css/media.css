@@ -8,12 +8,7 @@
   #mobile-menu-btn {
     display: block;
   }
-
-  /* #mobile-menu-btn:hover .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-  } */
-
+  
   #moon {
     display: none;
   }
@@ -83,13 +78,15 @@
     grid-template-columns: 1fr;
   }
   
-  /* .service-card{
-    width:100%;
-  } */
-
   .service-title {
     text-align: center;
   }
+
+  .service-description{
+    line-height: 21px;
+  }
+
+
 }
 
 
