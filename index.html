@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- link media style sheet -->
-     <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media.css">
 
     <title>Rabab Portfolio</title>
 </head>
@@ -384,6 +384,17 @@
 
         </div>
     </footer>
+
+
+    <script>
+        const menuBtn = document.getElementById("mobile-menu-btn");
+        const dropdownMenu = document.getElementById("dropdownmenun");
+
+        menuBtn.addEventListener("click", () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === "flex" ? "none" : "flex";
+        });
+    </script>
+
 
 
 
