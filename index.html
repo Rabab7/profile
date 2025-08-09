@@ -105,7 +105,7 @@
 
                 <div class="home-img-container">
                     <div class="home-img">
-                        <img src="./images/pPhoto.jpg" alt="portfolio img">
+                        <img src="./images/pPhoto.jpg" alt="portfolio img" loading="lazy">
                     </div>
                 </div>
 
@@ -232,7 +232,7 @@
             <div class="projects-grid">
                 <!-- project 1 -->
                 <div class="projects-card html-css">
-                    <div class="projects-img"><img src="./images/ruby restaurent.png" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/ruby restaurent.png" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab-Refaat/restaurant.git" target="_blank" class="project-link">
@@ -249,7 +249,7 @@
 
                 <!-- project 2 -->
                 <div class="projects-card bootstrap">
-                    <div class="projects-img"><img src="./images/cafe-app.png" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/cafe-app.png" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab7/cafe-app.git" target="_blank" class="project-link">
@@ -267,7 +267,7 @@
 
                 <!-- project 3 -->
                 <div class="projects-card js">
-                    <div class="projects-img"><img src="./images/yummy.jpeg" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/yummy.jpeg" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab7/yummy.git" target="_blank" class="project-link">
@@ -284,7 +284,7 @@
 
                 <!-- project 4 -->
                 <div class="projects-card js">
-                    <div class="projects-img"><img src="./images/game.png" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/game.png" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab7/game-app.git" target="_blank" class="project-link">
@@ -301,7 +301,7 @@
 
                 <!-- project 5 -->
                 <div class="projects-card tailwind">
-                    <div class="projects-img"><img src="./images/medilab.png" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/medilab.png" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab7/medilab.git" target="_blank" class="project-link">
@@ -318,7 +318,7 @@
 
                 <!-- project 6 -->
                 <div class="projects-card angular">
-                    <div class="projects-img"><img src="./images/ecommerce.png" alt="ruby restaurant image">
+                    <div class="projects-img"><img src="./images/ecommerce.png" alt="ruby restaurant image" loading="lazy">
                     </div>
                     <div class="projects-links">
                         <a href="https://github.com/Rabab7/ecommerce-repo.git" target="_blank" class="project-link">
@@ -389,9 +389,16 @@
     <script>
         const menuBtn = document.getElementById("mobile-menu-btn");
         const dropdownMenu = document.getElementById("dropdownmenun");
+        const dropdownLinks = dropdownMenu.querySelectorAll("a");
 
         menuBtn.addEventListener("click", () => {
             dropdownMenu.style.display = dropdownMenu.style.display === "flex" ? "none" : "flex";
+        });
+
+        dropdownLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                dropdownMenu.style.display = "none";
+            });
         });
     </script>
 
